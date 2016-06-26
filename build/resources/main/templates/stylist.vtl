@@ -1,0 +1,61 @@
+
+<h1 class = "text-info">
+  <center>Stylist: $stylist.getName()</center>
+</h1>
+<center>
+  <form action="/" method="get">
+    <button type="submit" class="btn btn-default" aria-label="Left Align">
+      <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+      <strong>CLICK HERE</strong> to return to stylist list!
+    </button>
+  </form>
+</center>
+
+<h3> Add a new client:</h3>
+<form action="/stylists/$stylist.getId()/new" method="post">
+
+  <label for="client_name">Client name</label>
+  <input id="client_name" name="client_name" type="text"><br>
+
+  <label for="phone">Phone Number</label>
+  <input id="phone" name="phone" type="text"><br>
+
+  <button id="test_btn_id" type="submit" class="btn btn-success">Submit</button>
+</form>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">$stylist.getName()'s clients:</div>
+
+<table style="width:100%" class="table table-bordered" >
+  #set($foo = 0)
+  <tr>
+      <td><strong>#</strong></td>
+      <td><strong>Name</strong></td>
+      <td><strong>Phone</strong></td>
+      <td><strong>Remove</strong></td>
+      <td><strong>Update</strong></td>
+  </tr>
+  #foreach($client in $clients)
+    #set($foo = $foo + 1)
+    <tr>
+      <td>$foo.</td>
+      <td>$client.getClientName()</td><td>$client.getPhone()</td>
+      <td><a href="/stylists/$stylist.getId()/clients/$client.getId()/delete"><button class="btn btn-danger">Delete</button></a></td>
+      <td>
+        <a href="/stylists/$stylist.getId()/clients/$client.getId()/update"><button id="update_btn" class="btn btn-info">Update Client Info</button></a>
+      </td>
+    </tr>
+  #end
+</table>
+</div>
+
+<div>
+<center>
+  <form action="/" method="get">
+    <button type="submit" class="btn btn-default" aria-label="Left Align">
+      <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+      <strong>CLICK HERE</strong> to return to stylist list!
+    </button>
+  </form>
+</center>
+</div>

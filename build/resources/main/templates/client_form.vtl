@@ -1,0 +1,13 @@
+
+<p>
+  Update Client Info:
+</p>
+<form action="/stylists/$client.getStylistId()/clients/$client.getId()/updateInfo" method="post">
+  <label for="client_name" >Client name</label>
+  <input id="client_name" name="client_name" type="text" value="$client.getClientName()">
+
+  <label for="phone" >Client phone</label>
+  <input id="phone" name="phone" type="text" value="$client.getPhone()">
+
+  <button id="client_update_button" type="submit" class="btn btn-success">Submit</button>
+</form>

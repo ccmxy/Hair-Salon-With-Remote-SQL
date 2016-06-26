@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StylistTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-06-26T11:21:08" hostname="Colleens-MacBook-Pro.local" time="17.44">
+  <properties/>
+  <testcase name="count_returnsCorrectCountsIfStylistIdAreTheSame" classname="StylistTest" time="5.051"/>
+  <testcase name="getClientListMatchStylistID" classname="StylistTest" time="4.966"/>
+  <testcase name="all_emptyAtFirst" classname="StylistTest" time="2.117"/>
+  <testcase name="true_stylistNameUpdated" classname="StylistTest" time="4.131"/>
+  <testcase name="equals_returnsTrueIfStylistsAreTheSame" classname="StylistTest" time="1.173"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

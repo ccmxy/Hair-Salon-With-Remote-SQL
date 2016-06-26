@@ -1,0 +1,29 @@
+<center><h1>Welcome back!</h1></center>
+
+<form action="/newStylist" method="post">
+<div class="form-group has-success has-feedback" action="/action/updateStylist/$stylist.getId()" method="post">
+  <label class="control-label" for="name">Add a new stylist to the list: </label>
+  <input id="name" type="text" class="form-control" name="name" aria-describedby="name">
+  <span class="glyphicon glyphicon-star form-control-feedback" aria-hidden="true"></span>
+  <span id="inputSuccess2Status" class="sr-only">(success)</span>
+</div>
+<button type="submit" class="btn btn-success" id="thisSubmit">Submit New Stylist</button>
+
+<h2>
+ <center>Stylists at this salon:</center>
+</h2>
+#set($foo = 0)
+  #foreach($stylist in $stylists)
+  #set($foo = $foo + 1)
+  <table class="table table-bordered">
+  <tr>
+  <td style="vertical align: middle"><h3 class = "muted">$foo.</h3></td>
+    <td style="vertical align: middle"><h2 class = "text-muted">$stylist.getName()</h3></td>
+    <td style="vertical align: middle"><h3><span class="glyphicon glyphicon-user"></span><a href="/stylists/$stylist.getId()">
+View/edit $stylist.getName()'s clients</a></h3> </td>
+    <td style="vertical align: middle"><h3><span class="glyphicon glyphicon-repeat"></span><a class = "text-success" href="/updateStylist/$stylist.getId()"> Update $stylist.getName()'s information</a></h3> </td>
+     <td style="vertical align: middle"><h3><span class="glyphicon glyphicon-remove"></span><a class = "text-warning" href="/del/$stylist.getId()"> Delete $stylist.getName() from list of stylists</a></h3></td>
+   </tr>
+   </table>
+  #end
+<i class="icon-star"></i>
