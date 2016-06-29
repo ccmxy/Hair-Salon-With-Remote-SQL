@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ClientTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-06-26T11:50:38" hostname="Colleens-MacBook-Pro.local" time="21.159">
+<testsuite name="ClientTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-06-29T01:44:52" hostname="Colleens-MacBook-Pro.local" time="21.747">
   <properties/>
-  <testcase name="phoneUpdated" classname="ClientTest" time="4.659"/>
-  <testcase name="save_returnsTrueIfClientIDAretheSame" classname="ClientTest" time="3.076"/>
-  <testcase name="findClientInDatabase" classname="ClientTest" time="3.088"/>
-  <testcase name="clientSaved" classname="ClientTest" time="3.053"/>
-  <testcase name="nameUpdated" classname="ClientTest" time="4.027"/>
-  <testcase name="all_emptyAtFirst" classname="ClientTest" time="2.112"/>
-  <testcase name="equals_returnsTrueIfClientAreTheSame" classname="ClientTest" time="1.139"/>
+  <testcase name="phoneUpdated" classname="ClientTest" time="5.156"/>
+  <testcase name="save_returnsTrueIfClientIDAretheSame" classname="ClientTest" time="3.095"/>
+  <testcase name="findClientInDatabase" classname="ClientTest" time="3.083"/>
+  <testcase name="clientSaved" classname="ClientTest" time="3.089"/>
+  <testcase name="nameUpdated" classname="ClientTest" time="4.073"/>
+  <testcase name="all_emptyAtFirst" classname="ClientTest" time="2.131"/>
+  <testcase name="equals_returnsTrueIfClientAreTheSame" classname="ClientTest" time="1.118"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
